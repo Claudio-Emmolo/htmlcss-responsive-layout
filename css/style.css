@@ -18,6 +18,11 @@
     display: flex;
 }
 
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
 .flex-between{
     justify-content: space-between;
     align-items: center;
@@ -38,6 +43,24 @@ header div.header-nav{
 
 /* Section Header Card */
 
+section#intro-card{
+    margin-top: 2rem;
+}
+
+div.cards{
+    flex-direction: column;
+}
+
+div.card{
+    width: 90%;
+    height: 400px;
+    background-color: #b5ddff;
+    border: 5px solid white;
+}
+
+div#big-card{
+    flex-direction: column;
+}
 
 
 /* ----------------------------
@@ -47,11 +70,44 @@ header div.header-nav{
 /* TABLET */
 @media screen and (min-width: 768px) {
 
+    /* ----------MAIN---------- */
+
+    /* Section Header Card */
+    div.cards{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    div.card:first-child{
+        width: calc((100% / 3) * 2);
+    }
+
+    div.card{
+        width: calc(100% / 3);
+    }
 }
+
+
+
+
+
+
+
+
+
 
 /* DEKSTOP */
 @media screen and (min-width: 992px) {
+
+    /* -----GENERAL----- */
     .container{
         width: 80%;
+    }
+
+    /* ----------MAIN---------- */
+
+    /* Section Header Card */
+
+    div#big-card{
+        flex-direction: row;
     }
 }
