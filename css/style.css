@@ -55,13 +55,23 @@ div.card{
     width: 90%;
     height: 400px;
     background-color: #b5ddff;
-    border: 5px solid white;
+    border: 10px solid white;
 }
 
 div#big-card{
     flex-direction: column;
 }
 
+/* Section Strategic Planning */
+section#strategic-planning{
+    background-color: #9792e4;
+}
+
+
+div.planning{
+    padding: 1rem;
+    margin-top: 1rem;
+}
 
 /* ----------------------------
          RESPONSIVE
@@ -69,6 +79,11 @@ div#big-card{
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+
+    /* -----GENERAL----- */
+    .container{
+        width: 95%;
+    }
 
     /* ----------MAIN---------- */
 
@@ -84,6 +99,7 @@ div#big-card{
     div.card{
         width: calc(100% / 3);
     }
+
 }
 
 
@@ -110,4 +126,11 @@ div#big-card{
     div#big-card{
         flex-direction: row;
     }
+
+        /* Section Strategic Planning */
+
+        div.planning-container{
+            display: flex;
+        }
+    
 }
