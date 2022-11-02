@@ -103,6 +103,29 @@ div.testimonial-card div.profile-img{
     background-color: red;
 }
 
+/* Section Benefits */
+section#benefits{
+    background-color: #9792e4;
+}
+
+section#benefits h2{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+section#benefits div.benefits-cards{
+    flex-direction: column;
+    padding: 3rem 2rem;
+
+}
+
+section#benefits div.benefits-card{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -144,6 +167,17 @@ div.testimonial-card div.profile-img{
         text-align: start;
     }
 
+    /* Section Benefits */
+    section#benefits div.benefits-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section#benefits div.benefits-card{
+        width: calc((100% / 2) - 1rem);
+        margin-left: 1rem;
+    }
+
 }
 
 
@@ -175,6 +209,17 @@ div.testimonial-card div.profile-img{
 
     div.planning-container{
         display: flex;
+    }
+
+    /* Section Benefits */
+    section#benefits div.benefits-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section#benefits div.benefits-card{
+        width: calc((100% / 3) - 1rem);
+        margin-left: 1rem;
     }
     
 }
