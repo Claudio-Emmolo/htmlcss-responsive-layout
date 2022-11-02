@@ -33,9 +33,17 @@ body{
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 .bg-purple{
     background-color: #9792e4;
     color: white;
+}
+
+.blu-txt{
+    color: #0084fd;
 }
 
 /* BUTTOnS */
@@ -51,6 +59,15 @@ body{
 .btn-white:hover{
     background-color: black;
     color: white;
+}
+
+.btn-blue{
+    background-color: #0084fd;
+    color: white;
+}
+.btn-blue:hover{
+    color: #0084fd;
+    background-color: white;
 }
 
 .btn-purple{
@@ -122,13 +139,35 @@ div.cards{
 
 div.card{
     width: 90%;
-    height: 400px;
     background-color: #b5ddff;
     border: 10px solid white;
+    padding: 2rem;
+
+    border-radius: 2.5rem;
 }
 
 div#big-card{
     flex-direction: column;
+}
+
+section.card-txt p{
+    color: #515e69;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+section.card-txt a{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+div.card-img{
+    display: block;
+}
+
+div.card-img img{
+    width: 300px;
 }
 
 /* Section Strategic Planning */
