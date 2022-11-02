@@ -141,20 +141,44 @@ div.card{
     width: 90%;
     background-color: #b5ddff;
     border: 10px solid white;
-    padding: 2rem;
 
     border-radius: 2.5rem;
 }
 
-div#big-card{
+div.small-card{
     flex-direction: column;
+    text-align: center;
+    padding: 2rem;
 }
 
-section.card-txt p{
+div.small-card i{
+    font-size: 6rem;
+}
+
+div.small-card h2{
+    margin: 1rem 3rem;
+}
+
+div#big-card{
+    flex-direction: column;
+    height: 100%;
+}
+
+section.card-txt p,
+div.small-card p{
     color: #515e69;
     font-size: 1.3rem;
     font-weight: 500;
     margin: 2rem 0;
+}
+
+div.small-card p{
+    font-size: 1.2rem;
+    margin: .6rem 0;
+}
+
+section.card-txt{
+    padding: 2rem;
 }
 
 section.card-txt a{
@@ -162,12 +186,15 @@ section.card-txt a{
     margin-bottom: 2rem;
 }
 
-div.card-img{
+div.card-img img{
     display: block;
+    width: 300px;
 }
 
-div.card-img img{
-    width: 300px;
+div.block-red{
+    width: 150px;
+    height: 150px;
+    background-color: red;
 }
 
 /* Section Strategic Planning */
@@ -286,6 +313,8 @@ footer p{
     div.cards{
         flex-wrap: wrap;
         flex-direction: row;
+
+        align-items: flex-end;
     }
     div.card:first-child{
         width: calc((100% / 3) * 2);
