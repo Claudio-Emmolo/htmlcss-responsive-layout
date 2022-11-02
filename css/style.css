@@ -41,6 +41,10 @@ header div.header-nav{
 
 /* ----------MAIN---------- */
 
+main>section{
+    margin: 2rem 0;
+}
+
 /* Section Header Card */
 
 section#intro-card{
@@ -73,9 +77,43 @@ div.planning{
     margin-top: 1rem;
 }
 
-/* ----------------------------
-         RESPONSIVE
----------------------------- */
+/* Section Testimonial */
+section#testimonial section.testimonial-title{
+    text-align: center;
+}
+
+section#testimonial div.testimonial-cards{
+    flex-direction: column;
+}
+
+div.testimonial-cards div.testimonial-card{
+    flex-direction: column;
+    
+    text-align: center;
+    background-color: #9792e4;
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+}
+
+    /* inside card */
+
+div.testimonial-card div.profile-img{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------
+                                RESPONSIVE
+-------------------------------------------------------------------------------- */
 
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -98,6 +136,12 @@ div.planning{
 
     div.card{
         width: calc(100% / 3);
+    }
+
+    /* Section Testimonial */
+    div.testimonial-cards div.testimonial-card{
+        flex-direction: row;
+        text-align: start;
     }
 
 }
@@ -127,10 +171,10 @@ div.planning{
         flex-direction: row;
     }
 
-        /* Section Strategic Planning */
+    /* Section Strategic Planning */
 
-        div.planning-container{
-            display: flex;
-        }
+    div.planning-container{
+        display: flex;
+    }
     
 }
