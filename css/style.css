@@ -141,7 +141,7 @@ div.card{
     width: 90%;
     background-color: #b5ddff;
     border: 10px solid white;
-
+    
     border-radius: 2.5rem;
 }
 
@@ -161,7 +161,6 @@ div.small-card h2{
 
 div#big-card{
     flex-direction: column;
-    height: 100%;
 }
 
 section.card-txt p,
@@ -322,6 +321,7 @@ footer p{
 
     div.card{
         width: calc(100% / 3);
+        height: 600px;
     }
 
     /* Section Testimonial */
@@ -385,11 +385,23 @@ footer p{
     /* ----------MAIN---------- */
 
     /* Section Header Card */
+    div.card{
+        height: 600px;
+    }
+
+    div.card-img{
+        height: 100%;
+        align-items: flex-end;
+        display: flex;
+    }
 
     div#big-card{
         flex-direction: row;
     }
 
+    section.card-txt a.btn {
+        padding: .5rem;
+      }
     /* Section Strategic Planning */
 
     div.planning-container{
