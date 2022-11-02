@@ -127,6 +127,19 @@ section#benefits div.benefits-card{
     margin-bottom: 1rem;
 }
 
+/* Section About Us */
+div.aboutus-container{
+    flex-direction: column;
+    padding: 1rem;
+}
+
+div.aboutus-user-linkedin{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+
 
 
 
@@ -176,6 +189,15 @@ section#benefits div.benefits-card{
     section#benefits div.benefits-card{
         width: calc((100% / 2) - 1rem);
         margin-left: 1rem;
+    }
+
+    /* Section About Us */
+    div.aboutus-container{
+        flex-direction: row;
+    }
+
+    div.aboutus-user-linkedin{
+        margin-left: 5rem;
     }
 
 }
