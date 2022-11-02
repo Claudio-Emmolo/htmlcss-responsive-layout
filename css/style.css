@@ -46,6 +46,10 @@ a{
     color: #0084fd;
 }
 
+.purple-txt{
+    color: #9792e4;
+}
+
 /* BUTTOnS */
 .btn{
     padding: .5rem 1.2rem;
@@ -255,7 +259,24 @@ div.planning-dev i{
 /* Section Testimonial */
 section#testimonial section.testimonial-title{
     text-align: center;
+    padding: 1rem 2rem;
 }
+
+        section#testimonial section.testimonial-title span{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 500;
+
+        }
+
+        section#testimonial section.testimonial-title h2{
+            font-size: 3rem;
+            margin: 2rem 0;
+        }
+
+        section#testimonial section.testimonial-title p{
+            font-size: 1.5rem;
+        }
 
 section#testimonial div.testimonial-cards{
     flex-direction: column;
@@ -268,16 +289,55 @@ div.testimonial-cards div.testimonial-card{
     background-color: #9792e4;
     margin: 1rem 2rem;
     padding: 1.5rem;
+    border-radius: 2rem;
 }
 
     /* inside card */
-
 div.testimonial-card div.profile-img{
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    height: 100%;
 }
 
+div.testimonial-card div.profile-img div.import-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ------ID IMG */
+#nat{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+#celia{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+#bob{
+    background-image: url(../img/testimonial3.jpg);
+}
+/* ID IMG------ */
+
+div.testimonial-comment{
+    color: white;
+}
+
+div.testimonial-comment p{
+    margin: 2rem 0;
+}
+
+div.testimonial-comment p i{
+    font-size: 1.5rem;
+}
+
+div.testimonial-comment span.testimonial-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 /* Section Benefits */
 section#benefits h2{
     text-align: center;
@@ -380,6 +440,10 @@ footer p{
         text-align: start;
     }
 
+    div.testimonial-card div.profile-img{
+        margin-right: 2rem;
+    }
+
     /* Section Benefits */
     section#benefits div.benefits-cards{
         flex-direction: row;
@@ -453,7 +517,7 @@ footer p{
         padding: .5rem;
       }
     /* Section Strategic Planning */
-
+    
     div.planning-container{
         padding: 3rem 0;
     }
@@ -484,6 +548,11 @@ footer p{
         width: 30%;
         height: 100%;
         align-items: flex-end;
+    }
+
+    /* Section Testimonial */
+    div.testimonial-card div.profile-img{
+        margin-right: 2rem;
     }
 
     /* Section Benefits */
