@@ -517,10 +517,26 @@ footer{
     text-align: center;
 
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 footer p{
-    margin-bottom: 1rem;    
+    margin: 2rem 0; 
+}
+
+footer a{
+    color: #9792e4;
+    border-bottom: 1px solid #9792e4;
+}
+
+footer a:hover{
+    color: #bdb8ff;
+    border-bottom: 1px solid #bdb8ff;
+
+}
+
+footer span.footer-credits{
+    line-height: 1.5;
 }
 
 
@@ -617,7 +633,7 @@ footer p{
     }
 
     .small-container{
-        width: 70%;
+        width: 60%;
     }
     /* ----------HEADER---------- */
     header li.nav-items{
@@ -710,5 +726,19 @@ footer p{
     div.aboutus-user-linkedin p{
         font-size: 2rem;
     }
+
+    /* Section Get Start */
+
+    div.getstart-container p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+        padding: 0  11rem;
+    }
     
+
+    /* ----------FOOTER---------- */
+    footer div.small-container{
+        padding: 0 15rem;
+    }
 }
