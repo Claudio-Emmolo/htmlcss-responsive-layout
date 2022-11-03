@@ -387,6 +387,7 @@ div.benefits-card a{
 }
 
 /* Section About Us */
+
 div.aboutus-container{
     flex-direction: column;
     padding: 1rem;
@@ -395,6 +396,57 @@ div.aboutus-container{
 div.aboutus-user-linkedin{
     margin-top: 2rem;
     width: 100%;
+}
+
+div.aboutus-container{
+    padding: 1.5rem;
+}
+
+div.aboutus-txt h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+div.aboutus-txt p{
+    line-height: 2;
+    margin-bottom: 4rem;
+}
+
+div.aboutus-txt p:last-child{
+    margin-bottom: 1rem;
+}
+
+    /* User Linkedin */
+div.aboutus-user-linkedin-img{
+    width: 30vw;
+    height: 30vw;
+
+    position: relative;
+}
+
+div.aboutus-user-linkedin-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+div.aboutus-user-linkedin-img i{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 4rem;
+}
+
+div.aboutus-user-linkedin p{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+div.aboutus-user-linkedin a{
+    display: inline-block;
+    margin: 2rem 0;
 }
 
 /* Section Get Start */
@@ -486,6 +538,7 @@ footer p{
     /* Section About Us */
     div.aboutus-container{
         flex-direction: row;
+        align-items: flex-start;
     }
 
     div.aboutus-user-linkedin{
@@ -592,6 +645,18 @@ footer p{
     section#benefits div.benefits-card{
         width: calc((100% / 3) - 1rem);
         margin-left: 1rem;
+    }
+
+    /* Section About Us */
+
+        /* User Linkedin */
+    div.aboutus-user-linkedin-img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    div.aboutus-user-linkedin p{
+        font-size: 2rem;
     }
     
 }
